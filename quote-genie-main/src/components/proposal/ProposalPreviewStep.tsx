@@ -164,7 +164,7 @@ const ProposalPreviewStep = ({ data }: Props) => {
         {/* Footer */}
         <div className="mt-12 border-t pt-4 text-center text-xs text-muted-foreground">
           <p>This proposal is confidential and intended solely for {data.clientCompany || "the recipient"}.</p>
-          <p className="mt-1">Generated with Codify</p>
+          <p className="mt-1">Generated with Quotify</p>
         </div>
       </div>
     </div>

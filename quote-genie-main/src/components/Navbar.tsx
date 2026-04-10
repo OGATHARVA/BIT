@@ -14,6 +14,7 @@ import {
   LogOut,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/logo.png";
 
 const authLinks = [
   { to: "/", label: "Home", icon: Home },
@@ -40,10 +41,10 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <div className="gradient-primary rounded-lg p-1.5">
-            <FileText className="h-5 w-5 text-primary-foreground" />
+          <div className="rounded-lg overflow-hidden h-9 w-9">
+            <img src={logo} alt="Quotify Logo" className="h-full w-full object-cover" />
           </div>
-          <span className="text-lg font-bold text-foreground hidden sm:inline">Codify</span>
+          <span className="text-xl font-extrabold tracking-tight text-foreground hidden sm:inline">Quotify</span>
         </Link>
 
         {/* Desktop */}

@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { FileText, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import logo from "@/assets/logo.png";
 
 const LoginPage = () => {
   const [identifier, setIdentifier] = useState("");
@@ -35,10 +36,10 @@ const LoginPage = () => {
       <Card className="w-full max-w-md shadow-card">
         <CardHeader className="text-center">
           <Link to="/" className="mx-auto mb-4 flex items-center gap-2">
-            <div className="gradient-primary rounded-lg p-1.5">
-              <FileText className="h-5 w-5 text-primary-foreground" />
+            <div className="rounded-lg overflow-hidden h-9 w-9">
+              <img src={logo} alt="Quotify Logo" className="h-full w-full object-cover" />
             </div>
-            <span className="text-lg font-bold text-foreground">Codify</span>
+            <span className="text-xl font-extrabold tracking-tight text-foreground">Quotify</span>
           </Link>
           <CardTitle className="text-2xl">Welcome Back</CardTitle>
           <CardDescription>Sign in to your account to continue</CardDescription>
